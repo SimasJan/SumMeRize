@@ -46,20 +46,6 @@ def parse_html(soup, target):
         article_str += p.text.strip()
     return {'string': article_str, 'sources_meta': urls_found_metadata}
 
-def find_entities(document, entities:list, unique=True):
-    results = {}
-    for ent in document.ents:
-        if ent.label_ in entities:
-            if ent.label_ not in results:
-                results[ent.label_] = [ent.text]
-            else:
-                results[ent.label_].append(ent.text)
-    # check arg condition
-    if unique == True:
-        for k in results:
-            results[k] = list(set(results[k]))
-    return results
-
 def find_entities(document, entity, unique=True):
     res = [ent.text.strip() for ent in document.ents if ent.label_ == entity]
     if unique: return list(set(res))
