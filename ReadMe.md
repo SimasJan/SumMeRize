@@ -5,8 +5,8 @@ Including parsing URL sources found in the article, and them too.
 
 ## The PLAN
 Phase 1:
-[x] 1. Give URL as source and ENT as entity and return entities found as ENT within the URL. 
-[x] 2. Accept multiple ENT
+1. Give URL as source and ENT as entity and return entities found as ENT within the URL. (9.6.22)
+2. Accept multiple ENT (9.6.22)
 3. Provide output filename to store results.
 4. Accept multiple sources (from a file)
 
