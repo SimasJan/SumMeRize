@@ -1,0 +1,11 @@
+{
+  "CARDINAL": "Numerals that do not fall under another type",
+  "GPE": "Countries, cities, states",
+  "DATE": "Absolute or relative dates or periods",
+  "ORG": "Companies, agencies, institutions, etc.",
+  "PERCENT": "Percentage, including \"%\"",
+  "PERSON": "People, including fictional",
+  "LOC": "Non-GPE locations, mountain ranges, bodies of water",
+  "ORDINAL": "\"first\", \"second\", etc.",
+  "TIME": "Times smaller than a day"
+}
